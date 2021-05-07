@@ -21,7 +21,7 @@ const OrderDetails = () => {
     const handlesumit = (e) => {
         e.preventDefault();
 
-        fetch('http://localhost:8000/order', {
+        fetch('https://cryptic-waters-27310.herokuapp.com/order', {
             method: 'POST',
             body: JSON.stringify(order),
             headers: {
@@ -37,7 +37,7 @@ const OrderDetails = () => {
 
 
     useEffect(() => {
-        fetch(`http://localhost:8000/product/${id}`)
+        fetch(`https://cryptic-waters-27310.herokuapp.com/product/${id}`)
             .then(res => res.json())
             .then(data => {
                 setsingleProduct(data);

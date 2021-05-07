@@ -7,7 +7,7 @@ const Admin = () => {
     const [allorder,setallorder] = useState([]);
 
     useEffect(()=>{
-        fetch('http://localhost:8000/orders')
+        fetch('https://cryptic-waters-27310.herokuapp.com/orders')
         .then(res => res.json())
         .then(data => setallorder(data))
     },[])

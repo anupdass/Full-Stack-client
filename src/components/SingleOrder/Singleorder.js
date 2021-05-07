@@ -8,7 +8,7 @@ const SingleOrder = (props) => {
 
   const handledelete = ()=>{
 
-      fetch(`http://localhost:8000/delete/${_id}`,{
+      fetch(`https://cryptic-waters-27310.herokuapp.com/delete/${_id}`,{
           method:"DELETE",
       })
       .then(res => res.json())

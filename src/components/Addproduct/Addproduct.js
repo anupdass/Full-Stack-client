@@ -16,7 +16,7 @@ const Addproduct = () => {
     const handlesumit =(e)=>{
         e.preventDefault();
         
-        fetch('http://localhost:8000/addproduct', {
+        fetch('https://cryptic-waters-27310.herokuapp.com/addproduct', {
             method: 'POST',
             body: JSON.stringify(product),
             headers: {

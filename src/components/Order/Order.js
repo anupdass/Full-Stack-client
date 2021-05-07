@@ -9,7 +9,7 @@ const Order = () => {
 
     console.log(login.email)    
     useEffect(()=>{
-        fetch(`http://localhost:8000/order/${login.email}`)
+        fetch(`https://cryptic-waters-27310.herokuapp.com/order/${login.email}`)
         .then(res => res.json())
         .then(data => setpersonorder(data))
     })
